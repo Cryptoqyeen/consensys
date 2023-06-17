@@ -43,16 +43,19 @@ export default function Footer() {
         </BodyText3>
         <div className="flex-center gap-4 footer-icons justify-center mt-5">
           <IconButton>
-            <LinkedIn />
+            <a href="https://t.me/ConsensysAI" target="_blank">
+              <Telegram />
+            </a>
           </IconButton>
           <IconButton>
-            <Telegram />
+            <a href="https://twitter.com/ConsensysAI" target="_blank">
+              <Twitter />
+            </a>
           </IconButton>
           <IconButton>
-            <Twitter />
-          </IconButton>
-          <IconButton>
-            <Email />
+            <a href="mailto:info@consensysai.com" target="_blank">
+              <Email />
+            </a>
           </IconButton>
         </div>
         <div className="text-center mt-5">
