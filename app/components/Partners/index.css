@@ -1,4 +1,4 @@
 .partners img {
-  width: 250px;
-  height: 70px;
+  width: 200px;
+  object-fit: contain;
 }

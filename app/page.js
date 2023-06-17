@@ -10,7 +10,7 @@ import "./home.css";
 export default function Home() {
   return (
     <section>
-      <main className="flex min-h-screen flex-col items-center justify-between p-10 main-wrap">
+      <main className="flex min-h-screen flex-col items-center justify-between md:p-10 p-3 main-wrap">
         <Navbar />
         <MainIntro />
         <About />
