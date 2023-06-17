@@ -17,7 +17,10 @@ export default function MainIntro() {
           streamline project-investor interaction by offering comprehensive
           project analysis and facilitating investment attraction.
         </BodyText3>
-        <a href="#" className="btn contract-btn-outline">
+        <a
+          href="https://bscscan.com/token/0xad67b1583086b44837cdf3750d5661e90a6b2cab"
+          className="btn contract-btn-outline"
+        >
           Contract
         </a>
         <BodyText3 className={"mt-1"}>
