@@ -23,6 +23,7 @@ export default function Navbar() {
             href="https://bscscan.com/token/0xad67b1583086b44837cdf3750d5661e90a6b2cab"
             className=""
             role="button"
+            target="_blank"
           >
             Contract
           </a>
