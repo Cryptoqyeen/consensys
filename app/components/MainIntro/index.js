@@ -18,6 +18,7 @@ export default function MainIntro() {
           project analysis and facilitating investment attraction.
         </BodyText3>
         <a
+          target="_blank"
           href="https://bscscan.com/token/0xad67b1583086b44837cdf3750d5661e90a6b2cab"
           className="btn contract-btn-outline"
         >

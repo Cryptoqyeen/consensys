@@ -29,7 +29,8 @@ export default function Footer() {
             visionaries, working in a decentralized and remote environment.
           </BodyText3>
           <a
-            href="#roadmap"
+            target="_blank"
+            href="mailto:info@consensysai.com"
             className="roadmap-btn-wrap footer p-2 mb-2 mx-auto"
             role="button"
           >
@@ -37,7 +38,11 @@ export default function Footer() {
           </a>
         </div>
         <BodyText3 className="text-center">
-          <a href="mailto:info@consensysai.com" className="text-center">
+          <a
+            href="mailto:info@consensysai.com"
+            target="_blank"
+            className="text-center"
+          >
             info@consensysai.com
           </a>
         </BodyText3>
