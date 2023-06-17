@@ -8,19 +8,35 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+const tokenomics = {
+  presale: 41,
+  marketing: 5,
+  cexListing: 5,
+  partnership: 8,
+  mobileApp: 2,
+  burn: 39,
+};
+
 const data = {
   labels: [
-    "Presale 41%",
-    "Marketing 10%",
-    "CEX listings 7%",
-    "Partnership 5%",
-    "Mobile app 2%",
-    "Burn 35%",
+    `Presale ${tokenomics.presale}%`,
+    `Marketing ${tokenomics.marketing}%`,
+    `CEX listings ${tokenomics.cexListing}%`,
+    `Partnership ${tokenomics.partnership}%`,
+    `Mobile app ${tokenomics.mobileApp}%`,
+    `Burn ${tokenomics.burn}%`,
   ],
   datasets: [
     {
       label: "Token Allocation",
-      data: [41, 10, 7, 5, 2, 35],
+      data: [
+        tokenomics.presale,
+        tokenomics.marketing,
+        tokenomics.cexListing,
+        tokenomics.partnership,
+        tokenomics.mobileApp,
+        tokenomics.burn,
+      ],
       backgroundColor: [
         "rgba(106, 132, 255, 0.7)",
         "rgba(244, 104, 135, 0.7)",
@@ -84,28 +100,28 @@ export default function Tokenomics() {
           <section className="mt-3 flex gap-3 flex-col md:flex-row">
             <div className="pr-5 md:border-r-2 md:border-gray-200">
               <TokenText
-                percent={41}
+                percent={tokenomics.presale}
                 color={"rgba(106, 132, 255, 1)"}
                 title={"Presale"}
               />
               <TokenText
-                percent={10}
+                percent={tokenomics.marketing}
                 color={"rgba(244, 104, 135, 1)"}
                 title={"Marketing"}
               />
               <TokenText percent={7} color={"green"} title={"CEX listings"} />
               <TokenText
-                percent={5}
+                percent={tokenomics.partnership}
                 color={"rgba(141, 176, 255, 1)"}
                 title={"Partnership"}
               />
               <TokenText
-                percent={2}
+                percent={tokenomics.mobileApp}
                 color={"rgba(238, 133, 68, 1)"}
                 title={"Mobile app"}
               />
               <TokenText
-                percent={35}
+                percent={tokenomics.burn}
                 color={"rgba(224, 1, 14, 1)"}
                 title={"Burn"}
               />
