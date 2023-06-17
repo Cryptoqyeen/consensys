@@ -1,0 +1,69 @@
+.roadmap-item {
+  position: relative;
+  margin-top: 12px;
+  max-width: 572px;
+  background: #fff;
+  -webkit-box-shadow: 0px 8px 32px rgba(5, 9, 26, 0.05),
+    0px 8px 16px rgba(5, 9, 26, 0.05), 0px 1px 2px rgba(5, 9, 26, 0.06);
+  -moz-box-shadow: 0px 8px 32px rgba(5, 9, 26, 0.05),
+    0px 8px 16px rgba(5, 9, 26, 0.05), 0px 1px 2px rgba(5, 9, 26, 0.06);
+  box-shadow: 0 8px 32px #05091a0d, 0 8px 16px #05091a0d, 0 1px 2px #05091a0f;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadmap__item-progress {
+  left: -19.5px;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: -12px;
+  background: #e4e4e4;
+}
+
+.roadmap__item-progress.roadmap__item-progress._achieved {
+  background-color: #2dc056;
+}
+
+.roadmap__item-progress._achieved::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 2px;
+  height: 162px;
+  background-color: #2dc056;
+  z-index: 1;
+}
+
+.roadmap__item-progress::after {
+  content: "";
+  width: 12px;
+  position: absolute;
+  height: 12px;
+  background-color: #e4e4e4;
+  top: 20px;
+  left: -5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.roadmap__item-progress._achieved::after {
+  background-color: #2dc056;
+}
+
+@media (max-width: 528px) {
+  .roadmap__item-progress._achieved::before {
+    width: 1px;
+  }
+
+  .roadmap__item-progress::after {
+    width: 8px;
+    height: 8px;
+    left: -3px;
+  }
+}

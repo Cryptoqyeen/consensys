@@ -1,0 +1,30 @@
+.doughnut-chart {
+  @apply w-1/2 flex;
+  height: 450px;
+  justify-content: flex-end;
+}
+
+.token-supply {
+  color: #0000ffc2;
+}
+
+.supply-info-list {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.supply-info-list li::before {
+  content: "\2022";
+  color: #bd9d94;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (max-width: 760px) {
+  .doughnut-chart {
+    width: 300px !important;
+    height: 290px !important;
+  }
+}

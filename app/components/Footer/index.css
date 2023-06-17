@@ -1,0 +1,15 @@
+.footer {
+  background-color: #f6f6f6;
+}
+
+.footer-icons svg {
+  fill: #c3a79f;
+}
+
+.connect-with-team {
+  max-width: 300px;
+}
+
+.roadmap-btn-wrap.footer {
+  width: 200px;
+}

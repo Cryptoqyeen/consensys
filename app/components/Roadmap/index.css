@@ -1,0 +1,36 @@
+.roadmap-list {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.roadmap-list li::before {
+  content: "\2022";
+  color: #bd9d94;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: #05091a;
+}
+
+.roadmap-section {
+  padding-top: 10rem;
+}
+
+.roadmap-wrap {
+  background: url("/assets/roadmap-bg.svg") top center no-repeat /* repeat */
+    fixed /* attachment */ padding-box /* origin */ content-box /* clip */;
+}
+
+@media (max-width: 428px) {
+  .roadmap-section {
+    padding-top: 5rem;
+  }
+}

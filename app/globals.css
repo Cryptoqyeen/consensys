@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +27,40 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: inset 1px 1px 10px #e4e4e4;
+  box-shadow: inset 1px 1px 10px #e4e4e4;
+}
+
+.flex-center {
+  @apply flex items-center;
+}
+
+.flex-gap-wide {
+  gap: 4.5rem;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
 }
