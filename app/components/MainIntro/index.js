@@ -21,7 +21,7 @@ export default function MainIntro() {
           Contract
         </a>
         <BodyText3 className={"mt-1"}>
-          - Put 0.5 ETH into the presale and get a premium token analysis
+          - Invest 5 BNB into the presale and get a premium token analysis
           program with AI for a whole year at no cost.
         </BodyText3>
         <BodyText3 className={"mt-1"}>
