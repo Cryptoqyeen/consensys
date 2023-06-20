@@ -16,7 +16,11 @@ export default function Navbar() {
           <a href="#roadmap" className="roadmap-btn-wrap p-2" role="button">
             Roadmap
           </a>
-          <a href="#" className="" role="button">
+          <a
+            href="https://www.pinksale.finance/launchpad/0xac7B7f293Fc0c247debe30752F21fBac7cC5968F?chain=BSC"
+            className=""
+            role="button"
+          >
             Presale
           </a>
           <a
